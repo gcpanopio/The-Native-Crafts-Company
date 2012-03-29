@@ -1,0 +1,787 @@
+﻿/* DEFAULTS
+----------------------------------------------------------*/
+
+body  
+{
+    background: #b6b7bc;
+    font-size: .80em;
+    font-family: Georgia;
+    margin: 0px;
+    color: #696969;
+}
+
+a:link, a:visited
+{
+    color: #034af3;
+    position: relative;
+}
+
+a:hover
+{
+    color: #1d60ff;
+    text-decoration: none;
+}
+
+a:active
+{
+    color: #034af3;
+}
+
+p
+{
+    margin: 0px 0;
+    line-height: 1em;
+    height: 30px;
+    width: 100;
+    text-decoration: none;
+}
+
+
+/* HEADINGS   
+----------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6
+{
+    font-size: 1.5em;
+    color: #666666;
+    font-variant: small-caps;
+    text-transform: none;
+    font-weight: 200;
+    margin-bottom: 0px;
+}
+
+h1
+{
+    font-size: 1.6em;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    text-align: left;
+    margin-left: 32px;
+}
+
+h2
+{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+h3
+{
+    font-size: 1.2em;
+}
+
+h4
+{
+    font-size: 1.1em;
+}
+
+h5, h6
+{
+    font-size: 1em;
+}
+
+/* this rule styles <h1> and <h2> tags that are the 
+first child of the left and right table columns */
+.rightColumn > h1, .rightColumn > h2, .leftColumn > h1, .leftColumn > h2
+{
+    margin-top: 0px;
+}
+
+
+/* PRIMARY LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+.page
+{
+    width: 90%;
+    background-color: #fff;
+    border: 1px solid #496077;
+    top: 0;
+    margin-left: 5%;
+    margin-bottom: 0;
+    height: 100%;
+    min-width: 900px;
+}
+
+.header
+{
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    background: #339966;
+    width: 100%;
+    height: 107px;
+    z-index: 5;
+    top: 0px;
+    left: 0px;
+}
+
+.header h1
+{
+    font-weight: 700;
+    margin: 0px;
+    padding: 0px 0px 0px 20px;
+    color: #f9f9f9;
+    border: none;
+    line-height: 2em;
+    font-size: 2em;
+    width: 100%;
+}
+
+.main
+{
+    padding: 0px 12px;
+    margin: 12px 8px 8px 8px;
+    min-height: 700px;
+    text-align: center;
+    bottom: 0;
+    margin-bottom: 0;
+}
+
+.leftCol
+{
+    padding: 6px 0px;
+    margin: 12px 8px 8px 8px;
+    width: 200px;
+    min-height: 200px;
+}
+
+.footer
+{
+    color: #4e5766;
+    padding: 8px 0px 0px 0px;
+    margin: 0px auto;
+    text-align: center;
+    line-height: normal;
+}
+
+
+/* TAB MENU   
+----------------------------------------------------------*/
+
+div.hideSkiplink
+{
+    background-color: #3A634F;
+    width: 100%;
+    z-index: -1;
+    height: 50px;
+}
+
+div.menu
+{
+    padding: 4px 0px 4px 8px;
+}
+
+div.menu ul
+{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    width: auto;
+}
+
+div.menu ul li a, div.menu ul li a:visited
+{
+    background-color: #47705B;
+    border: 1px #ffffff solid;
+    color: #dde4ec;
+    display: block;
+    line-height: 1.35em;
+    padding: 4px 20px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+div.menu ul li a:hover
+{
+    background-color: #bfcbd6;
+    color: #465c71;
+    text-decoration: none;
+}
+
+div.menu ul li a:active
+{
+    background-color: #465c71;
+    color: #cfdbe6;
+    text-decoration: none;
+}
+
+/* FORM ELEMENTS   
+----------------------------------------------------------*/
+
+fieldset
+{
+    margin: 1em 0px;
+    padding: 1em;
+    border: 1px solid #ccc;
+    width: 369px;
+}
+
+fieldset p 
+{
+    margin: 2px 12px 10px 10px;
+}
+
+fieldset.login label, fieldset.register label, fieldset.changePassword label
+{
+    display: block;
+}
+
+fieldset label.inline 
+{
+    display: inline;
+}
+
+legend 
+{
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 2px 4px 8px 4px;
+}
+
+input.textEntry 
+{
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+input.passwordEntry 
+{
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+div.accountInfo
+{
+    width: 99%;
+}
+
+/* MISC  
+----------------------------------------------------------*/
+
+.clear
+{
+    clear: both;
+}
+
+.title
+{
+    display: block;
+    float: left;
+    text-align: left;
+    }
+
+.loginDisplay
+{
+    font-size: 1.1em;
+    display: block;
+    text-align: right;
+    padding: 10px;
+    color: White;
+}
+
+.loginDisplay a:link
+{
+    color: white;
+}
+
+.loginDisplay a:visited
+{
+    color: white;
+}
+
+.loginDisplay a:hover
+{
+    color: white;
+}
+
+.failureNotification
+{
+    font-size: 1.2em;
+    color: Red;
+}
+
+.bold
+{
+    font-weight: bold;
+}
+
+.submitButton
+{
+    position: absolute;
+    left: 25%;
+    width: 50%;
+    height: 30px;
+}
+.gridInventory
+{
+    font-family: "times New Roman", Times, serif;
+    font-size: medium;
+} 
+body
+{
+    background: #b6b7bc;
+    font-size: medium;
+    font-family: Georgia;
+    margin: 0px;
+    padding: 0px;
+    color: #696969;
+}
+.textbox
+{
+    text-align: left;
+    padding-right: 10px;
+    margin-bottom: 1px;
+    left: 174px;
+}
+.errorLoginLabel
+{
+    padding-right: 10px;
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+div.hideSkiplink2
+{
+    border-left: 10px solid #3A634F;
+    background-color: #658B5A;
+    width: 10%;
+    left: 5%;
+    position: fixed;
+    top: 0%;
+    height: 100%;
+    min-width: 130px;
+}
+a:link2, a:visited2
+{
+    color: #006600;
+}
+.sidebar
+{
+    border-color: #FFFFFF;
+    border-style: solid;
+    border-width: 1px;
+    width: 75%;
+    left: 9px;
+    position: relative;
+    top: 166px;
+    background-color: #3A634F;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-right: 5px;
+    min-width: 80px;
+    height: auto;
+    padding-bottom: 5px;
+}
+.rightPane
+{
+    top: 176px;
+    left: 211px;
+    width: 80%;
+    right: 5%;
+    margin-right: 5px;
+    margin-left: auto;
+}
+.style2
+        {
+    padding: 0px 12px;
+    margin: 12px 8px 8px 8px;
+    min-height: 700px;
+    text-align: justify;
+    min-width: 800px;
+    width: 90%;
+    left: 5%;
+    right: 5%;
+}
+.logintext
+{
+    font-family: georgia;
+    width: 100%;
+    text-align: center;
+}
+#GridView1
+{
+    width: 80%;
+    margin-right: 20px;
+    margin-left: 0px;
+    right: 20px;
+    min-width: 600px;
+}
+.LocationName
+{
+    font-family: georgia;
+    font-size: x-large;
+    color: #4E5766;
+    font-weight: bolder;
+    text-transform: none;
+    text-decoration: underline;
+    text-align: center;
+}
+.quantityless20
+{
+    margin-left: 70px;
+    background-color: #FF6666;
+    color: #696969;
+    text-align: center;
+    vertical-align: baseline;
+    border-width: thin;
+    border-style: solid;
+    width: 200px;
+    line-height: normal;
+    height: 15px;
+    padding-bottom: 4px;
+}
+.blue
+{
+    font-family: Georgia;
+    font-size: small;
+    color: #3366CC;
+    margin-top: 15%;
+    width: 50%;
+    margin-left: 25%;
+}
+.sidebarButton
+{
+    position: absolute;
+    height: 50px;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    width: auto;
+    margin-bottom: -1px;
+}
+.profileLeft
+{
+    width: 45%;
+    position: absolute;
+    left: auto;
+    top: 158px;
+    right: 5%;
+    height: 100px;
+}
+.profileRight
+        {
+    width: 100%;
+    left: 5%;
+}
+.menubarButton
+{
+    background-color: #3A634F;
+    position: absolute;
+    border-style: solid;
+    border-width: 1px;
+    height: 50px;
+    margin: -3px;
+    padding-top: 5px;
+    padding-right: 7px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+.profileView
+{
+    border-style: solid;
+    padding: 50px;
+    position: absolute;
+    top: 150px;
+    min-width: 600px;
+    width: 70%;
+    margin-left: 5%;
+}
+.editButton
+{
+    padding-right: 10px;
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+}
+.profileHRView
+{
+    border-style: solid;
+    padding: 50px;
+    position: absolute;
+    top: 150px;
+    min-width: 550px;
+    width: 60%;
+    margin-right: 5%;
+    margin-left: auto;
+}
+.shortTB
+{
+    position: absolute;
+    width: 200px;
+    height: 22px;
+}
+.longTB
+{
+    width: 76%;
+    position: absolute;
+}
+.loginB
+{
+    margin: 0px 0px 0px 0px;
+    position: absolute;
+    top: 200px;
+    left: 25%;
+    width: 50%;
+    height: 30px;
+    text-align: center;
+}
+.longTB2
+{
+    width: 70%;
+    position: absolute;
+    top: 205px;
+    left: 201px;
+    height: 22px;
+}
+.HREditProfile
+{
+    border-style: solid;
+    padding: 50px;
+    position: absolute;
+    top: 150px;
+    min-width: 550px;
+    width: 60%;
+    margin-right: 5%;
+    margin-left: auto;
+}
+.shortTB2
+{
+    position: absolute;
+    height: 22px;
+    left: 200px;
+}
+.DateInput
+{
+    position: absolute;
+    width: 300px;
+    height: 22px;
+    left: 200px;
+    top: 295px;
+}
+.DateInput2
+{
+    position: absolute;
+    width: 300px;
+    height: 22px;
+    left: 200px;
+    top: 491px;
+}
+.longTB3
+{
+    width: 70%;
+    position: absolute;
+    top: 155px;
+    left: 200px;
+    height: 22px;
+}
+.DateInput3
+{
+    position: absolute;
+    width: 300px;
+    height: 22px;
+    left: 200px;
+    top: 246px;
+}
+.DateInput4
+{
+    position: absolute;
+    width: 300px;
+    height: 22px;
+    left: 200px;
+    top: 444px;
+}
+.profileLeft2
+{
+    width: 45%;
+    position: absolute;
+    left: auto;
+    top: 207px;
+    right: 5%;
+    height: 100px;
+}
+.HRsaveButton
+{
+    padding-right: 10px;
+    position: absolute;
+    right: 25%;
+    bottom: 10%;
+}
+.HRcancelButton
+{
+    padding-right: 10px;
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+}
+.shortTB3
+{
+    position: absolute;
+    height: 22px;
+    left: 200px;
+    width: 300px;
+}
+.unavailable
+{
+    margin-left: 70px;
+    background-color: #BFBFBF;
+    color: #696969;
+    text-align: center;
+    vertical-align: baseline;
+    border-width: thin;
+    border-style: solid;
+    width: 200px;
+    line-height: normal;
+    height: 15px;
+    padding-bottom: 4px;
+}
+.legend
+{
+    padding: 10px;
+    margin: 0px 0px 0px 0px;
+    border-style: solid;
+    position: absolute;
+}
+.loginC
+{
+    margin: 0px 0px 0px 0px;
+    border-style: solid;
+    position: absolute;
+    top: 200px;
+    left: 25%;
+    width: 50%;
+    height: 285px;
+    min-width: 500px;
+    text-align: center;
+}
+.changePword
+{
+    margin: 0px 0px 0px 0px;
+    border-style: solid;
+    position: absolute;
+    top: 200px;
+    left: 25%;
+    width: 50%;
+    height: 225px;
+    min-width: 500px;
+    text-align: left;
+}
+.orderButton
+        {
+    position: fixed;
+    top: 296px;
+    left: 103px;
+    margin-bottom: 0px;
+    height: 25px;
+}
+.submitButton2
+{
+    width: 100px;
+    height: 30px;
+}
+.legendCopyRight
+{
+    padding: 10px;
+    margin: 0px 0px 0px 0px;
+    border-style: solid;
+    position: absolute;
+    top: 148px;
+    height: 83px;
+    width: 20%;
+    right: 100px;
+    min-width: 250px;
+}
+.instructions
+{
+    padding: 10px;
+    margin: 0px 0px 0px 0px;
+    border-style: solid;
+    position: absolute;
+    top: 170px;
+    left: 100px;
+    width: 40%;
+    min-width: 400px;
+    height: 75px;
+}
+.quantityless202
+{
+    margin-left: 15px;
+    background-color: #FF6666;
+    color: #696969;
+    text-align: center;
+    vertical-align: baseline;
+    border-width: thin;
+    border-style: solid;
+    width: 200px;
+    line-height: normal;
+    height: 15px;
+    padding-bottom: 4px;
+    position: absolute;
+    top: 42px;
+}
+.unavailable2
+{
+    margin-left: 15px;
+    background-color: #BFBFBF;
+    color: #696969;
+    text-align: center;
+    vertical-align: baseline;
+    border-width: thin;
+    border-style: solid;
+    width: 200px;
+    line-height: normal;
+    height: 15px;
+    padding-bottom: 4px;
+}
+.salesorder
+{
+    padding: 10px;
+    margin: 0px 0px 0px 0px;
+    border-style: solid;
+    position: static;
+    top: 170px;
+    width: 50%;
+    min-width: 500px;
+    height: 71px;
+    margin-left: 20px;
+}
+.iTemplate
+{
+    background-color: #FFFFFF;
+    width: 100px;
+}
+.iTemplateDetails
+{
+    border-color: #A0A0A0;
+    padding: 5px;
+    border-style: solid;
+    width: 300px;
+    margin-left: 30px;
+    margin-top: 10px;
+    background-color: #FFFFFF;
+}
+.reports
+{
+    padding: 10px;
+    margin: 15px 15px 15px 0px;
+    border-style: solid;
+    position: static;
+    top: 170px;
+    left: 100px;
+    width: 400px;
+    min-width: 500px;
+    height: 59px;
+    background-color: #FFFFFF;
+}
+.iTemplateSet
+{
+    border-color: #4E5766;
+    padding: 5px;
+    border-style: solid;
+    position: static;
+    width: 700px;
+    margin-left: 70px;
+    margin-top: 10px;
+    background-color: #FBFBFB;
+}

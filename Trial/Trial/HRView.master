@@ -1,0 +1,23 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/HR.Master" AutoEventWireup="true" CodeBehind="HRView.master.cs" Inherits="Trial.HRView" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+     
+    <div class="rightPane">
+           <asp:ContentPlaceHolder ID="RightContent" runat="server">
+
+            </asp:ContentPlaceHolder>
+    </div>
+        <div class="hideSkiplink2">
+                <p class="sidebar"><asp:LinkButton ID="LinkButton1" runat="server" ForeColor="White"  class="sidebarButton"  onclick="LinkButton1_Click" >Employee</asp:LinkButton></p>
+                <p class="sidebar"><asp:LinkButton ID="LinkButton2" runat="server" ForeColor="White"  class="sidebarButton"  onclick="LinkButton2_Click" >Location</asp:LinkButton></p>
+                <p class="sidebar"><asp:LinkButton ID="LinkButton3" runat="server" ForeColor="White"  class="sidebarButton"  onclick="LinkButton3_Click" >Inventory</asp:LinkButton></p>
+                <p class="sidebar"><asp:LinkButton ID="LinkButton4" runat="server" ForeColor="White"  class="sidebarButton"  onclick="LinkButton4_Click" >Commission</asp:LinkButton></p>
+                <br />
+
+            <asp:ContentPlaceHolder ID="Sidebar2" runat="server">
+
+            </asp:ContentPlaceHolder>
+      </div>
+
+</asp:Content>

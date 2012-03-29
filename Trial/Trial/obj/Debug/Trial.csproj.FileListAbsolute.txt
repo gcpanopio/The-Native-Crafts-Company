@@ -1,0 +1,30 @@
+c:\users\acer\documents\visual studio 2010\Projects\Trial\Trial\bin\Trial.dll
+c:\users\acer\documents\visual studio 2010\Projects\Trial\Trial\bin\Trial.pdb
+c:\users\acer\documents\visual studio 2010\Projects\Trial\Trial\obj\Debug\ResolveAssemblyReference.cache
+c:\users\acer\documents\visual studio 2010\Projects\Trial\Trial\obj\Debug\Trial.dll
+c:\users\acer\documents\visual studio 2010\Projects\Trial\Trial\obj\Debug\Trial.pdb
+D:\UP\amfffft!!! 3rd year 2ndsem\VISUAL STUDIO STUFFS\Trial\Trial\bin\Trial.dll
+D:\UP\amfffft!!! 3rd year 2ndsem\VISUAL STUDIO STUFFS\Trial\Trial\bin\Trial.pdb
+D:\UP\amfffft!!! 3rd year 2ndsem\VISUAL STUDIO STUFFS\Trial\Trial\obj\Debug\ResolveAssemblyReference.cache
+D:\UP\amfffft!!! 3rd year 2ndsem\VISUAL STUDIO STUFFS\Trial\Trial\obj\Debug\Trial.dll
+D:\UP\amfffft!!! 3rd year 2ndsem\VISUAL STUDIO STUFFS\Trial\Trial\obj\Debug\Trial.pdb
+C:\Users\Shiela\Desktop\Updated\Trial\Trial\bin\Trial.dll
+C:\Users\Shiela\Desktop\Updated\Trial\Trial\bin\Trial.pdb
+C:\Users\Shiela\Desktop\Updated\Trial\Trial\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Shiela\Desktop\Updated\Trial\Trial\obj\Debug\Trial.dll
+C:\Users\Shiela\Desktop\Updated\Trial\Trial\obj\Debug\Trial.pdb
+C:\Documents and Settings\user\Desktop\MP-192\Trial\Trial\bin\Trial.dll
+C:\Documents and Settings\user\Desktop\MP-192\Trial\Trial\bin\Trial.pdb
+C:\Documents and Settings\user\Desktop\MP-192\Trial\Trial\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\user\Desktop\MP-192\Trial\Trial\obj\Debug\Trial.dll
+C:\Documents and Settings\user\Desktop\MP-192\Trial\Trial\obj\Debug\Trial.pdb
+C:\Users\Shiela\Desktop\Trial\Trial\bin\Trial.dll
+C:\Users\Shiela\Desktop\Trial\Trial\bin\Trial.pdb
+C:\Users\Shiela\Desktop\Trial\Trial\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Shiela\Desktop\Trial\Trial\obj\Debug\Trial.dll
+C:\Users\Shiela\Desktop\Trial\Trial\obj\Debug\Trial.pdb
+C:\Users\Shiela\Desktop\MP-192\Trial\Trial\bin\Trial.dll
+C:\Users\Shiela\Desktop\MP-192\Trial\Trial\bin\Trial.pdb
+C:\Users\Shiela\Desktop\MP-192\Trial\Trial\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Shiela\Desktop\MP-192\Trial\Trial\obj\Debug\Trial.dll
+C:\Users\Shiela\Desktop\MP-192\Trial\Trial\obj\Debug\Trial.pdb

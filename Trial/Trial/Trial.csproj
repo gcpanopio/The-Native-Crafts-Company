@@ -1,0 +1,466 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{79C7A622-F996-4B94-9130-55E992BC8A34}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Trial</RootNamespace>
+    <AssemblyName>Trial</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Web.config" />
+    <Content Include="Agent.Master" />
+    <Content Include="AgentChangePassword.aspx" />
+    <Content Include="AgentInventory.aspx" />
+    <Content Include="AgentProfile.aspx" />
+    <Content Include="AgentProfileEdit.aspx" />
+    <Content Include="AgentSalesOrder.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="ForgotPassword.aspx" />
+    <Content Include="HRChangePassword.aspx" />
+    <Content Include="HRCommission.aspx" />
+    <Content Include="HRCommissionEdit.aspx" />
+    <Content Include="HRProfile.aspx" />
+    <Content Include="App_Data\Direct-Selling.mdf" />
+    <Content Include="App_Data\Direct-Selling_log.ldf">
+      <DependentUpon>Direct-Selling.mdf</DependentUpon>
+    </Content>
+    <Content Include="HRProfileEdit.aspx" />
+    <Content Include="HRViewEmployee.aspx" />
+    <Content Include="HRViewEmployeeProfile.aspx" />
+    <Content Include="HRViewEmployeeProfileAdd.aspx" />
+    <Content Include="HRViewEmployeeProfileEdit.aspx" />
+    <Content Include="HRViewInventory.aspx" />
+    <Content Include="HRViewInventoryAdd.aspx" />
+    <Content Include="HRViewLocation.aspx" />
+    <Content Include="HRViewLocationAdd.aspx" />
+    <Content Include="HRViewLocationProfile.aspx" />
+    <Content Include="HRViewLocationProfileAdd.aspx" />
+    <Content Include="rowdeleting.txt" />
+    <Content Include="ScriptGenerateUsernameAndPassword.txt" />
+    <Content Include="Site.Master" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="SMChangePassword.aspx" />
+    <Content Include="SMProfile.aspx" />
+    <Content Include="SMProfileEdit.aspx" />
+    <Content Include="SMTP.txt" />
+    <Content Include="SMViewEmployee.aspx" />
+    <Content Include="SMViewEmployeeProfile.aspx" />
+    <Content Include="SMViewInventory.aspx" />
+    <Content Include="SMViewLocation.aspx" />
+    <Content Include="Styles\Style2.css" />
+    <Content Include="UMChangePassword.aspx" />
+    <Content Include="UMProfile.aspx" />
+    <Content Include="UMProfileEdit.aspx" />
+    <Content Include="UMViewEmployee.aspx" />
+    <Content Include="UMViewEmployeeProfile.aspx" />
+    <Content Include="UMViewInventory.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Agent.Master.cs">
+      <DependentUpon>Agent.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Agent.Master.designer.cs">
+      <DependentUpon>Agent.Master</DependentUpon>
+    </Compile>
+    <Compile Include="AgentChangePassword.aspx.cs">
+      <DependentUpon>AgentChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentChangePassword.aspx.designer.cs">
+      <DependentUpon>AgentChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgentInventory.aspx.cs">
+      <DependentUpon>AgentInventory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentInventory.aspx.designer.cs">
+      <DependentUpon>AgentInventory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgentProfile.aspx.cs">
+      <DependentUpon>AgentProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentProfile.aspx.designer.cs">
+      <DependentUpon>AgentProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgentProfileEdit.aspx.cs">
+      <DependentUpon>AgentProfileEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentProfileEdit.aspx.designer.cs">
+      <DependentUpon>AgentProfileEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgentSalesOrder.aspx.cs">
+      <DependentUpon>AgentSalesOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentSalesOrder.aspx.designer.cs">
+      <DependentUpon>AgentSalesOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotPassword.aspx.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ForgotPassword.aspx.designer.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HRChangePassword.aspx.cs">
+      <DependentUpon>HRChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HRChangePassword.aspx.designer.cs">
+      <DependentUpon>HRChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HRCommission.aspx.cs">
+      <DependentUpon>HRCommission.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HRCommission.aspx.designer.cs">
+      <DependentUpon>HRCommission.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HRCommissionEdit.aspx.cs">
+      <DependentUpon>HRCommissionEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HRCommissionEdit.aspx.designer.cs">
+      <DependentUpon>HRCommissionEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HRProfile.aspx.cs">
+      <DependentUpon>HRProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HRProfile.aspx.designer.cs">
+      <DependentUpon>HRProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="HR.Master.cs">
+      <DependentUpon>HR.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HR.Master.designer.cs">
+      <DependentUpon>HR.Master</DependentUpon>
+    </Compile>
+    <Compile Include="HRProfileEdit.aspx.cs">
+      <DependentUpon>HRProfileEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HRProfileEdit.aspx.designer.cs">
+      <DependentUpon>HRProfileEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HRView.master.cs">
+      <DependentUpon>HRView.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HRView.master.designer.cs">
+      <DependentUpon>HRView.master</DependentUpon>
+    </Compile>
+    <Compile Include="HRViewEmployee.aspx.cs">
+      <DependentUpon>HRViewEmployee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HRViewEmployee.aspx.designer.cs">
+      <DependentUpon>HRViewEmployee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HRViewEmployeeProfile.aspx.cs">
+      <DependentUpon>HRViewEmployeeProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HRViewEmployeeProfile.aspx.designer.cs">
+      <DependentUpon>HRViewEmployeeProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HRViewEmployeeProfileAdd.aspx.cs">
+      <DependentUpon>HRViewEmployeeProfileAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HRViewEmployeeProfileAdd.aspx.designer.cs">
+      <DependentUpon>HRViewEmployeeProfileAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HRViewEmployeeProfileEdit.aspx.cs">
+      <DependentUpon>HRViewEmployeeProfileEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HRViewEmployeeProfileEdit.aspx.designer.cs">
+      <DependentUpon>HRViewEmployeeProfileEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HRViewInventory.aspx.cs">
+      <DependentUpon>HRViewInventory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HRViewInventory.aspx.designer.cs">
+      <DependentUpon>HRViewInventory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HRViewInventoryAdd.aspx.cs">
+      <DependentUpon>HRViewInventoryAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HRViewInventoryAdd.aspx.designer.cs">
+      <DependentUpon>HRViewInventoryAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HRViewLocation.aspx.cs">
+      <DependentUpon>HRViewLocation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HRViewLocation.aspx.designer.cs">
+      <DependentUpon>HRViewLocation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HRViewLocationAdd.aspx.cs">
+      <DependentUpon>HRViewLocationAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HRViewLocationAdd.aspx.designer.cs">
+      <DependentUpon>HRViewLocationAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HRViewLocationProfile.aspx.cs">
+      <DependentUpon>HRViewLocationProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HRViewLocationProfile.aspx.designer.cs">
+      <DependentUpon>HRViewLocationProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HRViewLocationProfileAdd.aspx.cs">
+      <DependentUpon>HRViewLocationProfileAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HRViewLocationProfileAdd.aspx.designer.cs">
+      <DependentUpon>HRViewLocationProfileAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report.master.cs">
+      <DependentUpon>Report.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report.master.designer.cs">
+      <DependentUpon>Report.master</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SM.Master.cs">
+      <DependentUpon>SM.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SM.Master.designer.cs">
+      <DependentUpon>SM.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SMChangePassword.aspx.cs">
+      <DependentUpon>SMChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SMChangePassword.aspx.designer.cs">
+      <DependentUpon>SMChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SMProfile.aspx.cs">
+      <DependentUpon>SMProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SMProfile.aspx.designer.cs">
+      <DependentUpon>SMProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SMProfileEdit.aspx.cs">
+      <DependentUpon>SMProfileEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SMProfileEdit.aspx.designer.cs">
+      <DependentUpon>SMProfileEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SMReport.master.cs">
+      <DependentUpon>SMReport.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SMReport.master.designer.cs">
+      <DependentUpon>SMReport.master</DependentUpon>
+    </Compile>
+    <Compile Include="SMViewEmployee.aspx.cs">
+      <DependentUpon>SMViewEmployee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SMViewEmployee.aspx.designer.cs">
+      <DependentUpon>SMViewEmployee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SMViewEmployeeProfile.aspx.cs">
+      <DependentUpon>SMViewEmployeeProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SMViewEmployeeProfile.aspx.designer.cs">
+      <DependentUpon>SMViewEmployeeProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SMViewInventory.aspx.cs">
+      <DependentUpon>SMViewInventory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SMViewInventory.aspx.designer.cs">
+      <DependentUpon>SMViewInventory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SMViewLocation.aspx.cs">
+      <DependentUpon>SMViewLocation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SMViewLocation.aspx.designer.cs">
+      <DependentUpon>SMViewLocation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UM.Master.cs">
+      <DependentUpon>UM.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UM.Master.designer.cs">
+      <DependentUpon>UM.Master</DependentUpon>
+    </Compile>
+    <Compile Include="UMChangePassword.aspx.cs">
+      <DependentUpon>UMChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UMChangePassword.aspx.designer.cs">
+      <DependentUpon>UMChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UMProfile.aspx.cs">
+      <DependentUpon>UMProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UMProfile.aspx.designer.cs">
+      <DependentUpon>UMProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UMProfileEdit.aspx.cs">
+      <DependentUpon>UMProfileEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UMProfileEdit.aspx.designer.cs">
+      <DependentUpon>UMProfileEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UMViewEmployee.aspx.cs">
+      <DependentUpon>UMViewEmployee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UMViewEmployee.aspx.designer.cs">
+      <DependentUpon>UMViewEmployee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UMViewEmployeeProfile.aspx.cs">
+      <DependentUpon>UMViewEmployeeProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UMViewEmployeeProfile.aspx.designer.cs">
+      <DependentUpon>UMViewEmployeeProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UMViewInventory.aspx.cs">
+      <DependentUpon>UMViewInventory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UMViewInventory.aspx.designer.cs">
+      <DependentUpon>UMViewInventory.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="HR.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="HRView.master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Report.master" />
+    <Content Include="SM.Master" />
+    <Content Include="SMReport.master" />
+    <Content Include="UM.Master" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50669</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,29 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/SM.Master" AutoEventWireup="true" CodeBehind="SMReport.master.cs" Inherits="Trial.SMReport" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+    <div>
+    
+     <div class="rightPane">
+           <asp:ContentPlaceHolder ID="RightContent" runat="server">
+
+            </asp:ContentPlaceHolder>
+      </div>
+
+    <div class="hideSkiplink2">
+                <p class="sidebar">
+                    <asp:LinkButton ID="LinkButton1" runat="server" ForeColor="White" 
+                        onclick="LinkButton1_Click" >Unit Managers</asp:LinkButton>
+                    &nbsp;</p><p class="sidebar">
+                    <asp:LinkButton ID="LinkButton2" runat="server" ForeColor="White" 
+                        onclick="LinkButton2_Click" >Location</asp:LinkButton>
+                    &nbsp;&nbsp;</p>
+                <p class="sidebar">
+                    <asp:LinkButton ID="LinkButton3" runat="server" ForeColor="White" 
+                        onclick="LinkButton3_Click" >Inventory</asp:LinkButton>
+                </p>
+     </div>
+
+        <br />
+</div>
+</asp:Content>

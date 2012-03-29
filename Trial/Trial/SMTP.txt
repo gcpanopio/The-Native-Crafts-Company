@@ -1,0 +1,25 @@
+ try
+            {
+                MailMessage mail = new MailMessage();
+                SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com");
+
+                mail.From = new MailAddress("pau.121192@gmail.com"); 
+                mail.To.Add("svrubi@up.edu.ph");
+                mail.To.Add("mgbaloy@up.edu.ph");
+                mail.To.Add("gcpanopio@up.edu.ph");
+                mail.To.Add("svrubi@up.edu.ph");
+                mail.Subject = "Test Mail";
+                mail.Body = "Hi guys!! nakakapag send na ko ng email gamit ang C#!! hahaha, katulad neto. :D";
+
+                SmtpServer.Port = 587;
+                SmtpServer.Credentials = new System.Net.NetworkCredential("username", "password");
+                SmtpServer.EnableSsl = true;
+
+                SmtpServer.Send(mail);
+                Response.Write("<script>alert('mail Send');</script>");
+            }
+            catch (Exception ex)
+            {
+                Response.Write("<script>alert('" + ex.ToString() + "');</script>");
+
+            }

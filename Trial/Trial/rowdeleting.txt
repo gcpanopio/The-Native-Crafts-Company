@@ -1,0 +1,15 @@
+
+        /*    int employee_no = Convert.ToInt32(GridView1.DataKeys[e.RowIndex].Value);
+
+            int hrEmpNo = Convert.ToInt32(Session["empNo"]);
+           // int employee_no = Convert.ToInt32(e.CommandArgument);
+
+            if (hrEmpNo != employee_no)
+            {
+                DeleteRecordByID(employee_no);
+            }
+            else
+            {
+                Response.Write("<script>alert('Cannot delete your own account.');</script>");
+            }
+                */
